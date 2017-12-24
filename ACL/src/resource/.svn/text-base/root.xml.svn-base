@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- - This file is included by the struts.xml file as an example - of how 
+	to break up the configuration file into multiple files. -->
+<struts>
+	<!-- 根目录 / -->
+	<package name="root" namespace="/" extends="default">
+		<action name="" class="com.free4lab.webrtc.action.account.RootAction">
+			<result type="redirectAction">jump</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		<action name="jump" class="com.free4lab.webrtc.action.account.RootAction">
+			<result name="success">/basic/jump.jsp</result>
+		</action>
+		
+		<action name="main" class="com.free4lab.webrtc.action.account.RootAction">
+			<result name="success" type="redirect">/enterswitchboard</result>
+		</action>
+		
+		<action name="serverAdd" class="com.free4lab.webrtc.common.ServerAddUtil">
+		    <result name="success" type="json"></result>
+		</action>
+		
+	</package>	
+</struts>

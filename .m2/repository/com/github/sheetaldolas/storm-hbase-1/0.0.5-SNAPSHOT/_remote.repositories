@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat Dec 26 19:23:10 CST 2015
+storm-hbase-1-0.0.5-SNAPSHOT.jar>=
+storm-hbase-1-0.0.5-SNAPSHOT.pom>=

@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Mar 11 16:28:23 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1457684903044
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1457684829793
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.codehaus.mojo\:appassembler-maven-plugin\:jar\:1.1.1 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Sep 08 14:47:53 CST 2015
+jackson-core-2.3.2.jar>artifactory=
+jackson-core-2.3.2.jar>central=
+jackson-core-2.3.2.pom>artifactory=
+jackson-core-2.3.2.pom>central=

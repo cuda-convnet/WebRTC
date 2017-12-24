@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Mar 11 16:29:58 CST 2016
+http\://anonsvn.icesoft.org/repo/maven2/releases/.lastUpdated=1457684996864
+http\://maven-us.nuxeo.org/nexus/content/repositories/vendor-snapshots/.lastUpdated=1457684997548
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.openoffice\:ridl\:pom\:3.1.0 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out
+@default-artifactory-snapshot-http\://maven.free4lab.com/artifactory/libs-snapshot-local/.lastUpdated=1457684996291
+https\://repo.maven.apache.org/maven2/.lastUpdated=1457684998723
+http\://maven.free4lab.com/artifactory/libs-snapshot-local/.error=Could not transfer artifact org.openoffice\:ridl\:pom\:3.1.0 from/to artifactory-snapshot (http\://maven.free4lab.com/artifactory/libs-snapshot-local)\: connect timed out
+http\://maven-us.nuxeo.org/nexus/content/repositories/vendor-snapshots/.error=
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1457684986290
+http\://anonsvn.icesoft.org/repo/maven2/releases/.error=

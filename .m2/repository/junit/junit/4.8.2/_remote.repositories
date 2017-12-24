@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jun 23 09:47:09 CST 2015
+junit-4.8.2.pom>snapshots=
+junit-4.8.2.jar>artifactory=
+junit-4.8.2.jar>snapshots=
+junit-4.8.2.pom>central=
+junit-4.8.2.jar>central=
+junit-4.8.2.pom>artifactory=

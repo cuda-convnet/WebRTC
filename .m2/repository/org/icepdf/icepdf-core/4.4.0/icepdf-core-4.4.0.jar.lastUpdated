@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Mar 11 18:21:03 CST 2016
+@default-artifactory-snapshot-http\://maven.free4lab.com/artifactory/libs-snapshot-local/.lastUpdated=1457691632993
+http\://anonsvn.icesoft.org/repo/maven2/releases/.lastUpdated=1457691663479
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1457691432822
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.icepdf\:icepdf-core\:jar\:4.4.0 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out
+http\://maven.free4lab.com/artifactory/libs-snapshot-local/.error=Could not transfer artifact org.icepdf\:icepdf-core\:jar\:4.4.0 from/to artifactory-snapshot (http\://maven.free4lab.com/artifactory/libs-snapshot-local)\: connect timed out

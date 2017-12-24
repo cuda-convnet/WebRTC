@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Oct 14 22:04:36 CST 2015
+freeshare-2.x.x.x.pom>=
+freeshare-2.x.x.x-sources.jar>=
+freeshare-2.x.x.x.war>=

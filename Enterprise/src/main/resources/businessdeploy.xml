@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- 企业管理：业务配置相关请求 -->
+<struts>
+    <package name="businessdeploy" namespace="/businessdeploy" extends="default">
+		<action name="querybypage" class="com.free4lab.webrtc.action.enteruser.ExecuteBusinessDeployAction" method="queryByPage">
+			<result type="json"></result>
+		</action>
+		<action name="querybykeyword" class="com.free4lab.webrtc.action.enteruser.ExecuteBusinessDeployAction" method="queryByKeyword">
+			<result type="json"></result>
+		</action>	
+		<action name="modify" class="com.free4lab.webrtc.action.enteruser.ExecuteBusinessDeployAction" method="modify">
+			<result type="json"></result>
+		</action>
+    </package>    
+</struts>

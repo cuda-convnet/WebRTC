@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.free4lab.utils.sql.AbstractDAO"/>
+<fullyQualifiedTypeName name="com.free4lab.utils.sql.entitymanager.NoCacheEntityManagerHelper"/>
+<fullyQualifiedTypeName name="com.free4lab.utils.sql.IEntityManagerHelper"/>
+<fullyQualifiedTypeName name="com.free4lab.account.manager.Log"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="test.Test"/>
+<fullyQualifiedTypeName name="test.Employee"/>
+<fullyQualifiedTypeName name="test.Person"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.operations.Bool"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="father"/>
+<fullyQualifiedTypeName name="son"/>
+</qualifiedTypeNameHistroy>

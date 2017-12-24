@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 21:20:29 CST 2016
+@default-eclipselink-http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.lastUpdated=1457011228754
+https\://repo.maven.apache.org/maven2/.lastUpdated=1457011229937
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1457011208738
+http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.error=Could not transfer artifact org.slf4j\:slf4j-api\:jar\:1.6.6 from/to eclipselink (http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/)\: connect timed out
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.slf4j\:slf4j-api\:jar\:1.6.6 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out

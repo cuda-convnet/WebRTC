@@ -1,0 +1,17 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Dec 28 11:06:31 CST 2015
+https\://repo.eclipse.org/content/repositories/paho-releases/.error=
+http\://repository.mapr.com/maven/.error=
+https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1451271957543
+http\://repository.mapr.com/maven/.lastUpdated=1451271986568
+http\://repo.maven.apache.org/maven2/.lastUpdated=1451271944907
+https\://repository.apache.org/content/repositories/releases/.lastUpdated=1451271952400
+http\://clojars.org/repo/.lastUpdated=1451031822398
+https\://repository.jboss.org/nexus/content/repositories/releases/.error=
+https\://repo.spring.io/libs-release/.lastUpdated=1451271991606
+https\://repository.apache.org/content/repositories/releases/.error=
+http\://clojars.org/repo/.error=
+http\://repo1.maven.org/maven2/.lastUpdated=1451031843853
+https\://repository.cloudera.com/artifactory/cloudera-repos/.lastUpdated=1451271985260
+https\://repo.eclipse.org/content/repositories/paho-releases/.lastUpdated=1451271970874
+https\://repository.cloudera.com/artifactory/cloudera-repos/.error=

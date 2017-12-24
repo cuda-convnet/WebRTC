@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jun 23 09:46:57 CST 2015
+log4j-1.2.9.pom>artifactory=
+log4j-1.2.9.jar>central=
+log4j-1.2.9.pom>central=
+log4j-1.2.9.pom>snapshots=

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"       
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+       <package name="engroupship" namespace="/engroupship" extends="default">
+    	
+		<action name="engroups" class="com.free4lab.newtest.action.engroups.FindEngroupAction">
+			<result name="success">/engroup/findengroup.jsp</result>
+		</action>
+		<action name="engroups2" class="com.free4lab.newtest.action.engroups.FindEngroupAction">
+			<result name="success">/engroup/findengroup2.jsp</result>
+		</action>
+		<action name="engroups3" class="com.free4lab.newtest.action.engroups.FindEngroupAction">
+			<result name="success">/engroup/findengroup3.jsp</result>
+		</action>
+		<action name="engroups4" class="com.free4lab.newtest.action.engroups.FindEngroupAction">
+			<result name="success">/encontact/findencontact.jsp</result>
+		</action>
+		<action name="addengroup" class="com.free4lab.newtest.action.engroups.AddEngroupAction">
+			<result type="redirectAction">engroups</result>
+		</action>
+		<action name="modengroup" class="com.free4lab.newtest.action.engroups.ModEngroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="delengroup" class="com.free4lab.newtest.action.engroups.DelEngroupAction">
+			<result type="json"></result>
+		</action>
+    </package>    
+    
+   	 <package name="api/engroupship" namespace="/api/engroupship" extends="default">
+    	
+		<action name="engroups" class="com.free4lab.newtest.api.action.engroups.FindEngroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="engroups2" class="com.free4lab.newtest.api.action.engroups.FindEngroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="engroups3" class="com.free4lab.newtest.api.action.engroups.FindEngroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="engroups4" class="com.free4lab.newtest.api.action.engroups.FindEngroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="findSecondengroups" class="com.free4lab.newtest.api.action.engroups.FindEngroupAction" method="findSecondEngroups">
+			<result type="json"></result>
+		</action>
+		<action name="findFirstengroups" class="com.free4lab.newtest.api.action.engroups.FindEngroupAction" method="findFirstEngroups">
+			<result type="json"></result>
+		</action>
+		<action name="addengroup" class="com.free4lab.newtest.api.action.engroups.AddEngroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="modengroup" class="com.free4lab.newtest.api.action.engroups.ModEngroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="delengroup" class="com.free4lab.newtest.api.action.engroups.DelEngroupAction">
+			<result type="json"></result>
+		</action>
+    </package>   
+</struts>

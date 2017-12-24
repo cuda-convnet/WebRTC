@@ -1,0 +1,36 @@
+SECRET_KEY=freeaboutSecretKey
+CUSTOM_ID=freeabout
+
+###############local#############
+#Front
+FRONT_URL= http\://10.109.247.137:8088/front/
+#WMS
+URL_ACCOUNT = http://10.108.114.63:8067/
+#WMS
+HTTPS_ACCOUNT = http://10.108.114.63:8067/
+#wms in
+INURL_ACCOUNT = http://10.108.114.63:8067/
+#nginx
+Nginx_URL = 10.108.114.63:8888
+############labrary#################
+#Front
+#FRONT_URL= http\://10.109.247.137:8088/front/
+#WMS
+#URL_ACCOUNT = http://10.109.247.137:8080/
+#WMS
+#HTTPS_ACCOUNT = http://10.109.247.137:8080/
+#wms in
+#INURL_ACCOUNT = http://10.109.247.137:8080/
+#nginx
+#Nginx_URL = 10.109.247.137:8080
+############GZDX labrary#################
+#Front
+#FRONT_URL= http\://10.109.247.137:8088/front/
+#WMS
+#URL_ACCOUNT = http://10.109.247.137:8080/
+#WMS
+#HTTPS_ACCOUNT = http://10.109.247.137:8080/
+#wms in
+#INURL_ACCOUNT = http://10.109.247.137:8080/
+#nginx
+#Nginx_URL = 10.109.247.137:8080

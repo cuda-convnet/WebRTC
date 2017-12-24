@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jan 20 15:20:55 CST 2016
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.hadoop\:hadoop-hdfs\:pom\:2.7.1 from/to central (http\://repo.maven.apache.org/maven2)\: The operation was cancelled.
+@default-http\://repo.maven.apache.org/maven2/.lastUpdated=1453274455155

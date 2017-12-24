@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Oct 14 21:44:47 CST 2015
+https\://maven-repository.dev.java.net/nonav/repository/.error=Could not transfer artifact com.sun.jdmk\:jmxtools\:jar\:1.2.1 from/to java.net (https\://maven-repository.dev.java.net/nonav/repository)\: No connector available to access repository java.net (https\://maven-repository.dev.java.net/nonav/repository) of type legacy using the available factories AetherRepositoryConnectorFactory, WagonRepositoryConnectorFactory
+http\://repo.maven.apache.org/maven2/.lastUpdated=1444816296425
+http\://clojars.org/repo/.lastUpdated=1444826799987
+http\://clojars.org/repo/.error=
+http\://repo.maven.apache.org/maven2/.error=
+@legacy-https\://maven-repository.dev.java.net/nonav/repository/.lastUpdated=1444816346374
+http\://maven.free4lab.com/artifactory/libs-release/.lastUpdated=1444830287247

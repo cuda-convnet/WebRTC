@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jan 07 16:16:57 CST 2016
+kafka_2.9.2-0.8.1.1-sources.jar>artifactory=
+kafka_2.9.2-0.8.1.1.jar>central=
+kafka_2.9.2-0.8.1.1.pom>central=

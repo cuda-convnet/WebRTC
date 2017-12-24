@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.free4lab.utils</groupId>
+  <artifactId>free4lab-common-utils</artifactId>
+  <version>0.5.9.32-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20151122.154519</timestamp>
+      <buildNumber>25</buildNumber>
+    </snapshot>
+    <lastUpdated>20151122154520</lastUpdated>
+  </versioning>
+</metadata>

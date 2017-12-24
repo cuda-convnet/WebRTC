@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 11:19:25 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456975165051
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1456975164610
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact xpp3\:xpp3_min\:jar\:1.1.4c from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

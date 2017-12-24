@@ -1,0 +1,243 @@
+﻿/**
+*  This js file defines the rtc protocol library, 
+*  include roap protocol, rtc private protocol
+*
+*  @Filename: rtcprotocol.js
+*  @Version : 2.3
+*  @Author  : Zhao Guoshuai
+*  @Date    : 2012-10-08
+*/
+
+/*
+var Message = {
+	"type" : "register/session-initiate/session-refuse/session-bye/ack/heartbeat",
+	"from" : "alice@gmail.com",
+	"to"   : "bob@gmail.com",
+	"roap" : {
+		"type"           : "offer/answer/ok/candidate/shutdown/error",
+		"offerSessionId" : 1,
+		"answerSessionId": 2,
+		"seq"            : 1,
+		"sdp"			 : {},
+		"media"          : "audio/video"
+		"label"          : {},
+		"error"          : "",
+		"moreComingFlag" : true,
+		"tiebreaker"     : "123456"
+	}
+}
+*/
+
+com.webrtc.protocol = {
+	/*
+	* Func: define the sdp type
+	*/
+	RTCSdpType : {
+		"offer"    : 1,
+		"pranswer" : 2,
+		"answer"   : 3
+	},
+
+	/*
+	* Func define the roap type
+	*/
+	RTCRoapType : {
+		"offer"    : 1,
+		"answer"   : 2,
+		"ok"       : 3,
+		"candidate": 4,
+		"shutdown" : 5,
+		"error"    : 6,
+		"message"  : 7,
+		"auth"	   : 8,
+		"extend"   : 9,
+		"authreturn" : 10
+	},
+	
+	RTCRoapErrorType : {
+		"offline" : 1,
+		"timeout" : 2,
+		"nomatch" : 3,
+		"refused" : 4,
+		"conflict" : 5,
+		"doubleconflict" : 6,
+		"mediafailed" : 7,
+		"failed" : 8
+	},
+	
+	// add by yck
+	/**
+	 * 自动总机部分
+	 */
+	//与自动总机的会话状态
+	RTCAutoSessionState:{
+		"begin" : 1,
+		"chat" : 2,
+		"end" : 3
+	},
+	
+	//当前进行到的菜单
+	RTCAutoSessionCurMenu:{
+		"UNKNOWN":-1,
+		"FIRST" : 0,
+		"QUERYBYFZ1" : 1,
+		"QUERYBYFZ2" : 2,
+		"QUERYBYFZ3" : 3,
+		"QUERYBYFZ4" : 4,
+		"QUERYBYFZRESULT" : 5,
+		"QUERYBYKEYWORD" : 6,
+		"QUERYBYKEYWORDRESULT" : 7,
+		"QUERYBYUSERNAME" : 8,
+		"QUERYBYUSERNAMERESULT" : 9
+	},
+	
+	/**
+	 * 人工总机部分
+	 */
+	//外部用户or客服 ---> 人工总机模块触发的动作
+	RTCArtiActionType:{
+
+		"REQUEST" : 1, //请求分配（外部用户）
+		"END" : 2, //终止分配请求（外部用户，如关闭、退出、掉线或长时间无响应）
+		"LOGIN" : 3, //注册为人工总机（企业用户）
+		"LOGOUT" : 4, //注销人工总机（企业用户）	
+		"FINISH" : 5, //完成服务（企业用户）	
+	},
+	
+	//人工总机模块  ---> 外部用户 的反馈结果类型，进而采取不同的处理方法进行界面显示
+	RTCArtiAnswerType:{
+
+		"NONEARTI" : 1, //没有一个客服资源可分配-------->对话框显示“稍后再试（单人）
+		"ARTILOGOUT" : 2, //人工总机下线-------->对话框显示“人工总机出现异常，请重新等待（多人）
+		"FORM_REQUESTERNUM" : 3, //返回给用户他前面的等待人数-------->对话框显示“人数（单人）
+		"UPDATE_REQUESTERNUM" : 4, //所有用户他前面的等待人数-1-------->对话框显示“人数-1（多人）
+		"SUCCESS" : 5, //成功分配-------->与用户名为email的这个客服进行环信连接（单人）
+		"FINISH" : 6 //完成服务-------->本次服务已结束，您可重新发起请求（单人）
+	},
+	
+	RTCVasType : {
+		"roundCallList" : 1
+	},
+	/*
+	* Func define the roap constructor
+	*/
+	Roap : function(roapType, token, offerSessionId, answerSessionId, seq, sdp, label, error, moreComingFlag, msgSize, msgContent){
+		if(typeof roapType == "undefined"){
+			com.webrtc.Util.debug("Unknown roap type : " + roapType);
+			return;
+		}
+		return {
+			"type"            : roapType,
+			"token"			  : token,
+			"offerSessionId"  : offerSessionId,
+			"answerSessionId" : answerSessionId,
+			"seq"             : seq,
+			"sdp"             : sdp,
+			"label"           : label,
+			"error"           : error,
+			"moreComingFlag"  : moreComingFlag,
+			"tiebreaker"      : null,
+			"msgSize"		  : msgSize,
+			"msgContent"      : msgContent
+		}
+	},
+
+	/*
+	* Func define the rtc message type
+	*/
+	RTCMsgType : {
+		"register"         : 1,
+		"session-initiate" : 2,
+		"session-refuse"   : 3,
+		"session-bye"      : 4,
+		"session-ack"      : 5,
+		"heartbeat"        : 6,
+		"autoswitchboard"  : 7,
+		"artiswitchboard"  : 8
+	},
+
+	/*
+	* Func define the rtc constructor
+	*/
+	RTCProtocol : function(rtcType, from, to, roap, moduleType, sessionType,sessionID){
+		if(typeof rtcType == "undefined"){
+			com.webrtc.Util.debug("Unknown rtc type : " + rtcType);
+			return;
+		}
+		var temp = {
+			"type" : rtcType,
+			"from" : from,
+			"to"   : to,
+			"roap" : roap
+		};
+		if(typeof moduleType != "undefined")
+			temp["moduleType"] = moduleType;
+		if(typeof sessionType != "undefined")
+			temp["sessionType"] = sessionType;
+		if(typeof sessionID != "undefined")
+			temp["sessionID"] = sessionID;
+		return temp;
+	},
+
+	/*
+	* Func define the rtc message constructor
+	*/
+	RTCMessage : function(rtcType, roapType, description, gOfferSessionId, gAnswerSessionId, gRemoteUserID){
+		//construct the roap message body
+		var roap = null;
+		//the "register" rtc message doesn't need roap field
+		if(description != null){
+			if(typeof description.sdpMLineIndex != "undefined"){
+				//the "candidate" roap message body doesn't have label field
+				roap = new com.webrtc.protocol.Roap(roapType, com.webrtc.sigSessionConfig.token, gOfferSessionId, gAnswerSessionId, com.webrtc.sigSessionConfig.gSeq, description.candidate, description.sdpMLineIndex, null, com.webrtc.sigSessionConfig.gMoreComing, com.webrtc.sigSessionConfig.msgSize, com.webrtc.sigSessionConfig.msgContent);
+			}else{
+				//the offer or answer message
+				roap = new com.webrtc.protocol.Roap(roapType, com.webrtc.sigSessionConfig.token, gOfferSessionId, gAnswerSessionId, com.webrtc.sigSessionConfig.gSeq, description, null, null, com.webrtc.sigSessionConfig.gMoreComing, com.webrtc.sigSessionConfig.msgSize, com.webrtc.sigSessionConfig.msgContent);
+			}
+		}else{
+			//the register, error message
+			var errorType = arguments[6];
+			roap = new com.webrtc.protocol.Roap(roapType, com.webrtc.sigSessionConfig.token, gOfferSessionId, gAnswerSessionId, com.webrtc.sigSessionConfig.gSeq, null, null, errorType, com.webrtc.sigSessionConfig.gMoreComing, com.webrtc.sigSessionConfig.msgSize, com.webrtc.sigSessionConfig.msgContent);
+		}
+		//construct the rtc message
+		var rtcMsg = new com.webrtc.protocol.RTCProtocol(rtcType, com.webrtc.sigSessionConfig.username, gRemoteUserID, roap, arguments[7],arguments[8],arguments[9]);
+		return rtcMsg;
+	},
+	// add by yck
+	//向自动总机发送消息的格式
+	RTCAutoMessage:function(rtcType,from,to,status,question,sessionID,eid)
+	{
+		if(typeof rtcType == "undefined"){
+			com.webrtc.Util.debug("Unknown roap type : " + rtcType);
+			return;
+		}
+		return {
+			"type" : rtcType,
+			"from" : from,
+			"to"   : to,
+			"status": status,
+			"question": question,
+			"sessionID":sessionID,
+			"eid":eid
+		}
+	},
+	//向人工总机发送消息的格式（用户、客服均发这种消息）
+	RTCArtiMessage:function(rtcType,from,to,sessionID,eid,priority,targetname,maxservingnum,action)
+	{
+		if(typeof rtcType == "undefined"){
+			com.webrtc.Util.debug("Unknown roap type : " + rtcType);
+			return;
+		}
+		return {
+			"type" : rtcType,
+			"from" : from,
+			"to"   : to,
+			"sessionID":sessionID,
+			"eid":eid,
+			"priority":priority,
+			"targetname":targetname,
+			"maxservingnum":maxservingnum,
+			"action":action
+		}
+	}
+}

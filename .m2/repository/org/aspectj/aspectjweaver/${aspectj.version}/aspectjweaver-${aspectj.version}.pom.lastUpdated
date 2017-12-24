@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat Nov 28 16:35:18 CST 2015
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.aspectj\:aspectjweaver\:pom\:${aspectj.version} from/to central (http\://repo.maven.apache.org/maven2)\: Illegal character in path at index 63\: http\://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.pom
+@default-http\://repo.maven.apache.org/maven2/.lastUpdated=1448699718427
+@default-http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.lastUpdated=1448699718416
+@default-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1448699718407
+http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.error=Could not transfer artifact org.aspectj\:aspectjweaver\:pom\:${aspectj.version} from/to eclipselink (http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/)\: Illegal character in path at index 90\: http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.pom
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.aspectj\:aspectjweaver\:pom\:${aspectj.version} from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: Illegal character in path at index 70\: http\://maven.free4lab.com/artifactory/repo/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.pom

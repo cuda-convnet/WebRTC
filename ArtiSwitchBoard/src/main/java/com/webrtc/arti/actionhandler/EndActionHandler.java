@@ -1,0 +1,73 @@
+package com.webrtc.arti.actionhandler;
+
+
+
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import com.webrtc.arti.common.ActionType;
+import com.webrtc.arti.common.AnswerType;
+import com.webrtc.arti.core.ArtiSwitchBoardManager;
+import com.webrtc.arti.domain.Client;
+import com.webrtc.arti.domain.Server;
+
+/**
+ * 当外部用户关闭浏览器、退出、掉线进行处理
+ */
+public class EndActionHandler extends ActionHandler{
+
+
+	@Override
+	public void dispatch(Client client, Queue<Client> requestClientQueue,Map<String, Server> allServerMap, PriorityQueue<Server> idleServerQueue,Map<String, Server> busyServerMap) {
+		
+		String clientname = client.getUsername();
+		String servername = client.getTargetname();
+		
+		//先判断client刚才是否正与客服聊天，然后掉线
+		if(servername != null && !"".equals(servername)) //是
+		{
+			//找出刚才正服务于client的server
+			if(allServerMap.containsKey(servername)) //这个客服还存在的话
+			{
+				Server server = allServerMap.get(servername);
+				server.setTargetname(clientname);
+				new FinishActionHandler().dispatch(server, requestClientQueue, allServerMap, idleServerQueue, busyServerMap);
+			}
+		}
+		else //不是，是还在等待队列的用户
+		{
+			//通知所有在client之后等待的用户，等待数量-1
+			if(!requestClientQueue.isEmpty() && requestClientQueue.contains(client)) //不为空 
+			{
+				Queue<Client> subRequestClientQueue = getSubQueue(requestClientQueue,client);
+				printClientsInRequestQueue(subRequestClientQueue);
+				ArtiSwitchBoardManager.sendAnswerToWCS(subRequestClientQueue, AnswerType.UPDATE_REQUESTERNUM);
+				
+				requestClientQueue.remove(client);//从等待队列中移除client
+			}
+		}
+		
+		ArtiSwitchBoardManager.removeSession(clientname); //删除会话
+		printAll(requestClientQueue, idleServerQueue, busyServerMap, allServerMap);
+	}
+
+	@Override
+	public int getType() {
+
+		return ActionType.END;
+	}
+
+	//获取在client对象之后的子队列
+	public Queue<Client> getSubQueue(Queue<Client> queue, Client client)
+	{
+		Queue<Client> subQueue = new LinkedList<Client>();
+		
+		LinkedList<Client> list = (LinkedList<Client>)queue;
+		int headIndex = list.indexOf(client);
+		for(int i=headIndex+1;i<list.size();i++)
+			subQueue.offer(list.get(i));
+		
+		return subQueue;
+	}
+}

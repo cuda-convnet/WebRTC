@@ -1,0 +1,8 @@
+package com.webrtc.common;
+
+public interface AutoSessionStateType{
+	public static final int REQUEST = 1;
+	public static final int CHAT = 2;
+	public static final int TIMEOUT = 3;
+	public static final int END = 4;
+}

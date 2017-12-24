@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jun 23 09:47:07 CST 2015
+sdk-0.0.2.jar>artifactory=
+sdk-0.0.2.jar>central=
+sdk-0.0.2.pom>artifactory=
+sdk-0.0.2.pom>central=

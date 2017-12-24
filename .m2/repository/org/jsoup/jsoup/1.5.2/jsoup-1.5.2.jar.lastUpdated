@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 11:05:38 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456974338964
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1456974335817
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.jsoup\:jsoup\:jar\:1.5.2 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out

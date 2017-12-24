@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 21:17:52 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1457011072257
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1457011071833
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.sonatype.plexus\:plexus-sec-dispatcher\:pom\:1.3 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

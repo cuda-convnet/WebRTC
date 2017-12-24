@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>glasgow.master.team.project</groupId>
+  <artifactId>bridge</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20151228092252</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"       
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+       <package name="encontactship" namespace="/encontactship" extends="default">
+    	
+		<action name="encontacts" class="com.free4lab.newtest.action.encontacts.FindEncontactAction">
+			<result name="success">/encontact/findencontact.jsp</result>
+		</action>
+		<action name="encontacts2" class="com.free4lab.newtest.action.encontacts.FindEncontactAction">
+			<result name="success">/engroup/findengroup2.jsp</result>
+		</action>
+		<action name="encontacts3" class="com.free4lab.newtest.action.encontacts.FindEncontactAction">
+			<result name="success">/engroup/findengroup3.jsp</result>
+		</action>
+		<action name="addencontact" class="com.free4lab.newtest.action.encontacts.AddEncontactAction">
+			<result type="redirectAction">encontacts</result>
+		</action>
+		<action name="addencontact2" class="com.free4lab.newtest.action.encontacts.AddEncontactAction">
+			<result type="redirectAction">encontacts2</result>
+		</action>
+			<action name="addencontact3" class="com.free4lab.newtest.action.encontacts.AddEncontactAction">
+			<result type="redirectAction">encontacts3</result>
+		</action>
+		<action name="modencontact" class="com.free4lab.newtest.action.encontacts.ModEncontactAction">
+			<result type="json"></result>
+		</action>
+		<action name="delencontact" class="com.free4lab.newtest.action.encontacts.DelEncontactAction">
+			<result type="json"></result>
+		</action>
+    </package>   
+    
+    <package name="api/encontactship" namespace="/api/encontactship" extends="default">
+    	
+		<action name="encontacts" class="com.free4lab.newtest.api.action.encontacts.FindEncontactAction">
+			<result type="json"></result>
+		</action>
+		<action name="encontacts2" class="com.free4lab.newtest.api.action.encontacts.FindEncontactAction">
+			<result type="json"></result>
+		</action>
+		<action name="encontacts3" class="com.free4lab.newtest.api.action.encontacts.FindEncontactAction">
+			<result type="json"></result>
+		</action>
+		<action name="findsingleencontact" class="com.free4lab.newtest.api.action.encontacts.FindEncontactAction" method="findSingleEncontact">
+			<result type="json"></result>
+		</action>
+		<action name="addencontact" class="com.free4lab.newtest.api.action.encontacts.AddEncontactAction">
+			<result type="json"></result>
+		</action>
+		<action name="addencontact2" class="com.free4lab.newtest.api.action.encontacts.AddEncontactAction">
+			<result type="json"></result>
+		</action>
+		<action name="addencontact3" class="com.free4lab.newtest.api.action.encontacts.AddEncontactAction">
+			<result type="json"></result>
+		</action>
+		<action name="modencontact" class="com.free4lab.newtest.api.action.encontacts.ModEncontactAction">
+			<result type="json"></result>
+		</action>
+		<action name="delencontact" class="com.free4lab.newtest.api.action.encontacts.DelEncontactAction">
+			<result type="json"></result>
+		</action>
+    </package>    
+</struts>

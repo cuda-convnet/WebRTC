@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Sep 08 14:47:56 CST 2015
+httpclient-4.3.3.jar>artifactory=
+httpclient-4.3.3.pom>artifactory=
+httpclient-4.3.3.jar>central=
+httpclient-4.3.3.pom>central=

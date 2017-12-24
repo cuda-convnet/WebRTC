@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jan 26 18:36:23 CST 2016
+hive-shims-common-0.14.0.pom>=
+hive-shims-common-0.14.0.jar>central=
+hive-shims-common-0.14.0.pom>central=
+hive-shims-common-0.14.0.jar>=

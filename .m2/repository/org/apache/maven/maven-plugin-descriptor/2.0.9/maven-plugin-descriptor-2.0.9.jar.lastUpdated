@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 11:15:29 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456974929750
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1456974918801
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.apache.maven\:maven-plugin-descriptor\:jar\:2.0.9 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

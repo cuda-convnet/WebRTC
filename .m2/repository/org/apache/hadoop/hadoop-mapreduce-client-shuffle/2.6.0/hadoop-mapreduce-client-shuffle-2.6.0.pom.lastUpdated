@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Dec 21 15:42:02 CST 2015
+http\://clojars.org/repo/.lastUpdated=1450683720247
+http\://clojars.org/repo/.error=
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.hadoop\:hadoop-mapreduce-client-shuffle\:pom\:2.6.0 from/to central (http\://repo.maven.apache.org/maven2)\: The operation was cancelled.
+@default-http\://repo.maven.apache.org/maven2/.lastUpdated=1450683690684
+http\://maven.free4lab.com/artifactory/libs-release/.lastUpdated=1450683722525

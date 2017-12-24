@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jun 23 09:46:52 CST 2015
+commons-io-2.0.1.pom>artifactory=
+commons-io-2.0.1.jar>central=
+commons-io-2.0.1.pom>central=
+commons-io-2.0.1.pom>snapshots=

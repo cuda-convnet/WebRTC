@@ -1,0 +1,14 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jan 11 17:07:54 CST 2016
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.error=Could not transfer artifact org.apache.hbase\:hbase-protocol\:jar\:1.1.1 from/to repository.jboss.org (http\://repository.jboss.org/nexus/content/groups/public-jboss/)\: The operation was cancelled.
+@default-http\://people.apache.org/~garyh/mvn/.lastUpdated=1452503274079
+@default-http\://repo.maven.apache.org/maven2/.lastUpdated=1452503274064
+@default-http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1452503274079
+http\://people.apache.org/~garyh/mvn/.error=Could not transfer artifact org.apache.hbase\:hbase-protocol\:jar\:1.1.1 from/to ghelmling.testing (http\://people.apache.org/~garyh/mvn/)\: The operation was cancelled.
+http\://download.java.net/maven/2/.error=Could not transfer artifact org.apache.hbase\:hbase-protocol\:jar\:1.1.1 from/to java.net (http\://download.java.net/maven/2/)\: The operation was cancelled.
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.hbase\:hbase-protocol\:jar\:1.1.1 from/to central (http\://repo.maven.apache.org/maven2)\: The operation was cancelled.
+http\://repo.hortonworks.com/content/repositories/public/.error=Could not transfer artifact org.apache.hbase\:hbase-protocol\:jar\:1.1.1 from/to HDPReleases (http\://repo.hortonworks.com/content/repositories/public)\: The operation was cancelled.
+https\://repository.apache.org/content/repositories/releases/.error=Could not transfer artifact org.apache.hbase\:hbase-protocol\:jar\:1.1.1 from/to apache release (https\://repository.apache.org/content/repositories/releases/)\: The operation was cancelled.
+@default-http\://repo.hortonworks.com/content/repositories/public/.lastUpdated=1452503274032
+@default-https\://repository.apache.org/content/repositories/releases/.lastUpdated=1452503274079
+@default-http\://download.java.net/maven/2/.lastUpdated=1452503274079

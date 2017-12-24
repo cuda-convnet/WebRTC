@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jun 22 14:29:56 CST 2015
+javaee-web-api-6.0.jar>artifactory=
+javaee-web-api-6.0.jar>central=
+javaee-web-api-6.0.jar>snapshots=
+javaee-web-api-6.0.pom>artifactory=
+javaee-web-api-6.0.pom>central=
+javaee-web-api-6.0.pom>snapshots=

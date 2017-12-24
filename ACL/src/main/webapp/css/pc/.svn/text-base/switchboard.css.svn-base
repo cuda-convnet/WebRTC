@@ -1,0 +1,114 @@
+﻿/*
+------------------------------- 
+Site:        企业总机界面
+Author:      xuduo
+Updated:     2016-03-13
+-------------------------------
+*/
+
+
+body{background:#97a2a7; }
+.switchboard_box{width:890px; height:630px; padding:0; margin:0px auto 0; overflow:hidden; background:#ecf1f3; -moz-border-radius:6px;   -webkit-border-radius: 6px;  border-radius:6px;
+box-shadow:0 0 18px #79858c;}
+
+
+
+/*=======头部=======*/
+.switchboard_head{width:100%; height:65px; overflow:hidden; background:#489fcf;}
+
+ /*--------头部 左 用户信息-------*/
+.switchboard_head .user_info{width:500px; float:left; margin:14px 0 0 25px; overflow:hidden;}
+.switchboard_head .user_info .portrait{width:40px; height:40px;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%; overflow:hidden; float:left;}
+ .switchboard_head .user_info .portrait img{width:40px; height:40px;}
+.switchboard_head .user_info .user_name{padding:0 3px 0 10px; float:left; display:inline-block;font-size:24px;line-height:40px; font-weight:100; color:#fff;}/*---用户名称--*/
+  /*--------头部 左 用户信息- end------*/
+
+ /*--------头部 右 操作-------*/
+.switchboard_head_right{width:250px; margin-top:18px;float:right; }
+.switchboard_head_right li{width:35px; height:35px; margin-right:8px; float:right; overflow:hidden; background-image:url(images/meeting_head_icon.png); cursor:pointer; text-indent:-80px;}
+.switchboard_head_right .operation_close{margin-right:15px; margin-left:20px;background-position:0 0;}
+.switchboard_head_right .operation_video{background-position:0 -35px;}
+.switchboard_head_right .operation_audio{background-position:0 -70px;}
+.switchboard_head_right .operation_file{background-position:0 -105px;}
+.switchboard_head_right .operation_add{background-position:0 -140px;}
+.switchboard_head_right .operation_exit{background-position:0 -175px;}
+.switchboard_head_right .operation_set{background-position:0 -210px;}
+.switchboard_head_right .operation_time{background-position:0 -245px;}
+.switchboard_head_right .operation_artificial{background-position:0 -280px;}
+ /*--------头部 右 操作 end-------*/  
+
+ /*-----*/
+/*=======头部end=======*/
+
+
+
+/*=======主体 左=======*/
+.switchboard_box_l{width:600px; height:630px; float:left; background:#fff; border-left:1px solid #d9e3e7;}
+
+/*=======主体 左 end=======*/
+
+ /*=======双方对话 =======*/
+.chat_list_box{width:100%; height:210px; background:#888; overflow:auto;}
+.chat_list_box{width:100%; height:425px;  overflow:auto;}
+.chat_list_box .chat_you,
+.chat_list_box .chat_me{width:550px; margin:20px auto; display:block; overflow:hidden;}
+.chat_list_box .img_li{width:38px; height:38px; overflow:hidden;-moz-border-radius: 50%;  -webkit-border-radius: 50%;  border-radius:50%;}/*----头像-----*/
+.chat_list_box .img_li img{width:38px; height:38px;}
+.chat_list_box .img_text{width:475px;}
+.chat_list_box .text_box{min-width:210px; max-width:100%; min-height:40px; margin:0 10px; position:relative;-moz-border-radius:8px;  -webkit-border-radius:8px;  border-radius:8px;}/*----气泡-----*/
+.chat_list_box .text_box p{padding:10px 15px; font-size:14px; line-height:22px;}
+.chat_list_box .text_box i{width:14px; height:10px; display:block; position:absolute; top:-1px; background-image:url(images/chat_pop.png);}
+
+/*---------对方---------*/
+.chat_list_box .chat_you .img_li{float:left;}
+.chat_list_box .chat_you .img_text{float:left; }
+.chat_list_box .chat_you .text_box{float:left;  background:#d2ecfa; border:1px solid #d2ecfa;}
+.chat_list_box .chat_you .text_box i{left:-8px; background-position:0 -10px}
+.chat_list_box .chat_you a{color:#0078ba; text-decoration:underline;}
+/*---------对方 end---------*/
+
+/*---------我---------*/
+.chat_list_box .chat_me .img_li{float:right;}
+.chat_list_box .chat_me .img_text{float:right; }
+.chat_list_box .chat_me .text_box{float:right; background:#ecf6fb; border:1px solid #c4e1f1;}
+.chat_list_box .chat_me .text_box i{right:-8px; background-position:0 0;}
+
+/*---------我 end---------*/
+
+/*=======双方对话 end=======*/
+
+/*======编辑对话=======*/
+.input_chat_box{width:100%; height:140px; display:block; overflow:hidden; background:#f3f7f9; border-top:1px solid #d9e3e7;}
+.input_chat_box .input_text{width:570px; height:64px; padding:8px; margin:10px auto 5px; display:block; border:1px solid #bad1de; background:#fff; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:14px; line-height:150%;}
+
+.input_chat_box .input_chat_edit{width:586px; margin:0 auto; display:block; overflow:hidden;}
+.input_chat_box .input_chat_edit_l{width:300px; margin:5px 0 0 2px; float:left;}
+.input_chat_box .input_chat_edit_l li{width:24px; height:24px; margin-right:8px; float:left; overflow:hidden; 
+filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity:0.6;background-image:url(images/chat_input_icon.png); text-indent:-90px; cursor:pointer; }
+.input_chat_edit_l .icon_history{background-position:0 0}
+.input_chat_edit_l .icon_face{background-position:-24px 0}
+.input_chat_edit_l .icon_font_size{background-position:-48px 0}
+.input_chat_edit_l .icon_color{background-position:-72px 0}
+.input_chat_box .input_chat_edit_l li:hover{filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity:1;}
+	
+.input_chat_box .input_chat_edit_r{width:100px; float:right;}
+.input_chat_edit_r .send_out{width:80px; height:30px;   float:right;}
+
+.btn_blue{height:30px; display:block;border:1px solid #bad1de; background:#ecf6fb; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:14px; line-height:30px; color:#3383c1; cursor:pointer; text-align:center;}/*----浅蓝色边线按钮---*/
+.btn_blue:hover{background:#d6f0fd;}
+/*======编辑对话 end=======*/
+
+/*=======主体 右=======*/
+.switchboard_box_r{width:286px; height:630px; float:right; }
+.switchboard_box_r .switchboard_video{width:270px; margin:10px auto;}
+ .switchboard_box_r .switchboard_video li img{width:270px; height:178px; margin-bottom:10px;}
+/*=======主体 右 end=======*/
+
+

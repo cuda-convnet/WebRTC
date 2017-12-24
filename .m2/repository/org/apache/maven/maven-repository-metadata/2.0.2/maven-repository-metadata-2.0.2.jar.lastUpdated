@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Dec 26 20:55:36 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1482756936758
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1482756711880
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.apache.maven\:maven-repository-metadata\:jar\:2.0.2 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: maven.free4lab.com

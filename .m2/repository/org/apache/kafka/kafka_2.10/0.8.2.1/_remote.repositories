@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jan 13 10:07:01 CST 2016
+kafka_2.10-0.8.2.1.pom>HDPReleases=
+kafka_2.10-0.8.2.1.pom>maven=
+kafka_2.10-0.8.2.1.jar>central=
+kafka_2.10-0.8.2.1-sources.jar>central=
+kafka_2.10-0.8.2.1.jar>maven=
+kafka_2.10-0.8.2.1.pom>central=
+kafka_2.10-0.8.2.1.jar>HDPReleases=

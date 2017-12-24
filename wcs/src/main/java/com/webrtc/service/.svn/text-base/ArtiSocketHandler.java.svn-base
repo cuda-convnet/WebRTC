@@ -1,0 +1,83 @@
+package com.webrtc.service;
+
+import java.net.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.io.*;
+
+import org.cometd.bayeux.server.ServerSession;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.webrtc.common.ArtiAnswerType;
+import com.webrtc.common.Constants;
+import com.webrtc.domain.ArtiActionMessage;
+import com.webrtc.domain.ArtiSession;
+import com.webrtc.domain.AutoSession;
+
+
+//WCSGSocketHandler 连接的是 人工总机客服分配模块
+
+public class ArtiSocketHandler extends SocketHandler {
+
+	private final int OFFER_SUCCESS = 5;
+	
+	public ArtiSocketHandler(String id, Socket s) {
+		super(id,s);
+	}
+	/**
+	 * handle the message received
+	 * 
+	 * @param message
+	 *            : the message need to handle
+	 * @throws
+	 * @return
+	 */
+	@Override
+	public void handleMessage(String message) {
+		/**
+		 * 收到人工总机模块反馈的answer后，进行处理
+		 * 返回前台提示用户
+		 */
+
+		try {
+			JSONObject msgObj = new JSONObject(message);
+			String to = msgObj.getString("to");
+			int answer = msgObj.getInt("answer");
+			
+			//首先判断answer是否为SUCCESS，若是把targetname存入
+
+			//先把to拆解为单个用户，逐一发送
+			String[] clientNames = to.split(",");
+			for(String clientName : clientNames)
+			{	
+				Map<String, ArtiSession> artiSessions = ArtiSession.getArtiSessions();
+				if(!artiSessions.containsKey(clientName)) continue;
+				
+				//把to对应的前端的sessionID增加进msgObj来
+				ArtiSession artiSession = artiSessions.get(clientName);
+				String sessionID = artiSession.getSessionID();
+				msgObj.put("sessionID", sessionID);
+				
+				//判断是否为成功分配SUCCESS消息，若是就需要把servername、存入会话中
+				//以便以后该用户退出，通知服务于该用户的客服进行相关操作
+				if(answer == OFFER_SUCCESS) 
+				{
+					artiSession.setEid(msgObj.getInt("eid"));
+					artiSession.setServername(msgObj.getString("targetname"));
+				}
+				
+				//获取客户端对象，转发
+				ArrayList<ServerSession> peers = HttpService.getClientsFromClientName(clientName);
+				if(peers != null && peers.get(0) != null)
+					HttpService.forwardingMessageFromSwitchBoard(msgObj, peers.get(0)); //发送给前台
+				else
+					System.out.println("收到后端自动总机的回应信息，但找不到前端客户端对象");
+			}
+			
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+	}
+}

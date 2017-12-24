@@ -1,0 +1,130 @@
+package com.free4lab.account.model;
+
+
+import static javax.persistence.GenerationType.IDENTITY;
+
+import java.io.Serializable;
+import java.sql.Timestamp;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * 企业--企业用户表
+ */
+@Entity
+@Table(name="enter_user")
+public class Enteruser implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	
+	@Id @GeneratedValue(strategy=IDENTITY)
+	@Column(name="id",unique=true,nullable=false)
+	private Integer id;
+	
+	@Column(name="eid",nullable=false)
+	private Integer eid;
+
+	@Column(name="uid",nullable=false)
+	private Integer uid;
+	
+	@Column(name="isadmin",nullable=false)
+	private Integer isadmin;
+	
+	@Column(name="isarti",nullable=false)
+	private Integer isarti;
+	
+	@Column(name="priority",nullable=false)
+	private Integer priority;
+	
+	@Column(name="isbindtimer",nullable=false)
+	private Integer isbindtimer;
+	
+	@Column(name = "login_time", nullable = true)
+	private Timestamp loginTime;
+	
+	@Column(name = "logout_time", nullable = true)
+	private Timestamp logoutTime;
+	
+	public Enteruser() {
+		
+	}
+
+
+	public Enteruser(Integer eid, Integer uid, Integer isadmin, Integer isarti, Integer priority,
+			Integer isbindtimer, Timestamp loginTime, Timestamp logoutTime) {
+
+		this.eid = eid;
+		this.uid = uid;
+		this.isadmin = isadmin;
+		this.isarti = isarti;
+		this.priority = priority;
+		this.isbindtimer = isbindtimer;
+		this.loginTime = loginTime;
+		this.logoutTime = logoutTime;
+	}
+
+
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public Integer getEid() {
+		return eid;
+	}
+
+	public void setEid(Integer eid) {
+		this.eid = eid;
+	}
+
+	public Integer getUid() {
+		return uid;
+	}
+
+	public void setUid(Integer uid) {
+		this.uid = uid;
+	}
+
+	public Integer getIsadmin() {
+		return isadmin;
+	}
+	public void setIsadmin(Integer isadmin) {
+		this.isadmin = isadmin;
+	}
+	
+	public Integer getIsarti() {
+		return isarti;
+	}
+	public void setIsarti(Integer isarti) {
+		this.isarti = isarti;
+	}
+	public Integer getIsbindtimer() {
+		return isbindtimer;
+	}
+	public void setIsbindtimer(Integer isbindtimer) {
+		this.isbindtimer = isbindtimer;
+	}
+	public Timestamp getLoginTime() {
+		return loginTime;
+	}
+	public void setLoginTime(Timestamp loginTime) {
+		this.loginTime = loginTime;
+	}
+	public Timestamp getLogoutTime() {
+		return logoutTime;
+	}
+	public void setLogoutTime(Timestamp logoutTime) {
+		this.logoutTime = logoutTime;
+	}
+	public Integer getPriority() {
+		return priority;
+	}
+	public void setPriority(Integer priority) {
+		this.priority = priority;
+	}
+}

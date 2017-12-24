@@ -1,0 +1,32 @@
+package com.webrtc.domain;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+public class ArtiActionMessage {
+
+	private JSONObject msgObj= null;
+	
+	public ArtiActionMessage(int eid, String from, int priority, String targetname,int maxservingnum, int action) {
+		
+		try {
+			this.msgObj = new JSONObject();
+			this.msgObj.put("eid", eid);
+			this.msgObj.put("from", from);
+			this.msgObj.put("priority", priority);
+			this.msgObj.put("targetname", targetname);
+			this.msgObj.put("maxservingnum", maxservingnum);
+			this.msgObj.put("action", action);
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public JSONObject getMsgObj() {
+		return msgObj;
+	}
+
+	public void setMsgObj(JSONObject msgObj) {
+		this.msgObj = msgObj;
+	}
+}

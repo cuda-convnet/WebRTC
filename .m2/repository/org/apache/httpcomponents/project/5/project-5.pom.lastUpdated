@@ -1,0 +1,22 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Dec 25 16:25:55 CST 2015
+https\://repository.cloudera.com/content/repositories/third-party/.lastUpdated=1451031955994
+https\://repository.cloudera.com/content/groups/cdh-releases-rcs/.error=
+http\://www.datanucleus.org/downloads/maven2/.error=
+http\://clojars.org/repo/.error=
+http\://repository.codehaus.org/.error=Could not transfer artifact org.apache.httpcomponents\:project\:pom\:5 from/to codehaus (http\://repository.codehaus.org/)\: repository.codehaus.org
+https\://repository.cloudera.com/content/groups/cdh-releases-rcs/.lastUpdated=1451031953848
+https\://repository.cloudera.com/artifactory/cloudera-repos/.error=
+http\://people.apache.org/~stack/m2/repository/.error=
+http\://download.java.net/maven/2/.lastUpdated=1451031951526
+https\://repository.apache.org/content/repositories/releases/.lastUpdated=1451031949003
+http\://download.java.net/maven/2/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1451031952445
+@default-http\://repository.codehaus.org/.lastUpdated=1451031951705
+http\://clojars.org/repo/.lastUpdated=1451031947703
+http\://people.apache.org/~garyh/mvn/.error=
+https\://repository.cloudera.com/artifactory/cloudera-repos/.lastUpdated=1451031947463
+https\://repository.cloudera.com/content/repositories/third-party/.error=
+http\://www.datanucleus.org/downloads/maven2/.lastUpdated=1451031954747
+http\://people.apache.org/~stack/m2/repository/.lastUpdated=1451031950348
+http\://people.apache.org/~garyh/mvn/.lastUpdated=1451031952638

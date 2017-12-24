@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Mar 23 15:09:35 CST 2016
+@default-eclipselink-http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.lastUpdated=1458716139594
+https\://repo.maven.apache.org/maven2/.lastUpdated=1458716975777
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1458715859476
+http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.error=Could not transfer artifact org.jboss.logging\:jboss-logging\:jar\:3.1.3.GA from/to eclipselink (http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/)\: connect timed out
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.jboss.logging\:jboss-logging\:jar\:3.1.3.GA from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out

@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Dec 27 23:00:07 CST 2016
+http\://maven.free4lab.com/artifactory/libs-snapshot/.error=Could not transfer artifact org.hamcrest\:hamcrest-core\:pom\:1.3 from/to snapshots (http\://maven.free4lab.com/artifactory/libs-snapshot)\: maven.free4lab.com
+@default-central-http\://maven.free4lab.com/artifactory/libs-release/.lastUpdated=1482850807286
+@default-snapshots-http\://maven.free4lab.com/artifactory/libs-snapshot/.lastUpdated=1482850807303
+http\://maven.free4lab.com/artifactory/libs-release/.error=Could not transfer artifact org.hamcrest\:hamcrest-core\:pom\:1.3 from/to central (http\://maven.free4lab.com/artifactory/libs-release)\: maven.free4lab.com

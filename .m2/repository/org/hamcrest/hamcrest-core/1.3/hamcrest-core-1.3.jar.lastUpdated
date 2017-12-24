@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Apr 26 11:08:39 CST 2016
+http\://maven.free4lab.com/artifactory/libs-snapshot/.error=Could not transfer artifact org.hamcrest\:hamcrest-core\:jar\:1.3 from/to snapshots (http\://maven.free4lab.com/artifactory/libs-snapshot)\: connect timed out
+@default-central-http\://maven.free4lab.com/artifactory/libs-release/.lastUpdated=1461640109114
+@default-snapshots-http\://maven.free4lab.com/artifactory/libs-snapshot/.lastUpdated=1461640119118
+http\://maven.free4lab.com/artifactory/libs-release/.error=Could not transfer artifact org.hamcrest\:hamcrest-core\:jar\:1.3 from/to central (http\://maven.free4lab.com/artifactory/libs-release)\: connect timed out

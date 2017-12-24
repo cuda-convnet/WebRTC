@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jan 07 16:05:06 CST 2016
+javax.servlet-api-3.1.0.jar>artifactory=
+javax.servlet-api-3.1.0.pom>artifactory=
+javax.servlet-api-3.1.0.jar>snapshots=
+javax.servlet-api-3.1.0.jar>central=
+javax.servlet-api-3.1.0.pom>snapshots=
+javax.servlet-api-3.1.0.pom>central=

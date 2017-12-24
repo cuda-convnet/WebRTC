@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 11:03:56 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456974236692
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1456974233439
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.codehaus.plexus\:plexus-container-default\:jar\:1.0-alpha-9-stable-1 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

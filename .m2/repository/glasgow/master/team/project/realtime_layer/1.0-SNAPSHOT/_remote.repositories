@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Dec 28 17:27:20 CST 2015
+realtime_layer-1.0-SNAPSHOT.pom>=
+realtime_layer-1.0-SNAPSHOT-jar-with-dependencies.jar>=
+realtime_layer-1.0-SNAPSHOT.jar>=

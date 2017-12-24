@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 16:26:50 CST 2016
+freefront-0.1.0-sources.jar>=
+freefront-0.1.0.pom>=
+freefront-0.1.0.war>=

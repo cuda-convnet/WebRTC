@@ -1,0 +1,53 @@
+package com.webrtc.arti.actionhandler;
+
+
+
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+import com.webrtc.arti.common.ActionType;
+import com.webrtc.arti.common.AnswerType;
+import com.webrtc.arti.core.ArtiSwitchBoardManager;
+import com.webrtc.arti.domain.Client;
+import com.webrtc.arti.domain.Server;
+
+/**
+ * 当人工总机用户点击 "服务完毕"即成功服务一名外部用户后 进行处理
+ */
+public class FinishActionHandler extends ActionHandler{
+
+	
+	@Override
+	public void dispatch(Client client, Queue<Client> requestClientQueue,Map<String, Server> allServerMap, PriorityQueue<Server> idleServerQueue,Map<String, Server> busyServerMap) {
+	
+		ArtiSwitchBoardManager.sendAnswerToWCS(client, AnswerType.FINISH);//通知该客服targetname用户的服务已结束
+		
+		String servername = client.getUsername();
+		String clientname = client.getTargetname();
+	
+		if(!allServerMap.containsKey(servername)) return;
+		
+		Server server = allServerMap.get(servername); //取得名为servername的客服
+		Client servedClient =  server.getServingClientMap().get(clientname);//取得刚才正在服务的用户
+		ArtiSwitchBoardManager.sendAnswerToWCS(servedClient, AnswerType.FINISH);//通知该用户与targetname客服的服务已结束
+		server.removeServingClient(clientname); //删除，对该用户的服务到此为止
+
+		//该客服刚才是否正处于满员状态
+		if(busyServerMap.containsKey(servername)) //是
+		{	
+			busyServerMap.remove(servername);//将其从忙碌表解放出来
+			idleServerQueue.offer(server);//进入空闲优先队列
+		}
+		
+		//分配资源给下一个用户
+		super.giveOffer(requestClientQueue,allServerMap, idleServerQueue, busyServerMap);
+	}
+
+	@Override
+	public int getType() {
+
+		return ActionType.FINISH;
+	}
+
+}

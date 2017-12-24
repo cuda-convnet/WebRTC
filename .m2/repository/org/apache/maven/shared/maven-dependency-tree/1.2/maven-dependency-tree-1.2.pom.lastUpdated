@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jun 23 09:47:15 CST 2015
+http\://maven.free4lab.com/artifactory/plugins-release/.lastUpdated=1435024035363
+@default-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1434896779108
+@default-http\://repo.maven.apache.org/maven2/.lastUpdated=1434896779108
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.maven.shared\:maven-dependency-tree\:pom\:1.2 from/to central (http\://repo.maven.apache.org/maven2)\: The operation was cancelled.
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.apache.maven.shared\:maven-dependency-tree\:pom\:1.2 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: The operation was cancelled.

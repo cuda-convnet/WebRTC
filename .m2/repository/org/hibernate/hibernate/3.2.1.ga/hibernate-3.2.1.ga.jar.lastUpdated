@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 10:46:21 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456973181077
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1456973149761
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.hibernate\:hibernate\:jar\:3.2.1.ga from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out

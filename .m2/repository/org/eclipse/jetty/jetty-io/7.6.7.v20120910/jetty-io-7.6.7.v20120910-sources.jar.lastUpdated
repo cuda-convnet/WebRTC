@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Apr 25 17:16:05 CST 2016
+@default-eclipselink-http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.lastUpdated=1461575763351
+https\://repo.maven.apache.org/maven2/.lastUpdated=1461575765297
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1461575752542
+http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.error=Could not transfer artifact org.eclipse.jetty\:jetty-io\:jar\:sources\:7.6.7.v20120910 from/to eclipselink (http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/)\: connect timed out
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.eclipse.jetty\:jetty-io\:jar\:sources\:7.6.7.v20120910 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out

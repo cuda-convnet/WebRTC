@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Mar 23 15:09:38 CST 2016
+@default-eclipselink-http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.lastUpdated=1458716139609
+https\://repo.maven.apache.org/maven2/.lastUpdated=1458716978900
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1458715859516
+http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.error=Could not transfer artifact org.jvnet.mimepull\:mimepull\:jar\:1.9.3 from/to eclipselink (http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/)\: connect timed out
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.jvnet.mimepull\:mimepull\:jar\:1.9.3 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out

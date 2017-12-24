@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Mar 11 18:11:35 CST 2016
+http\://anonsvn.icesoft.org/repo/maven2/releases/.lastUpdated=1457691094825
+http\://maven-us.nuxeo.org/nexus/content/repositories/vendor-snapshots/.lastUpdated=1457691095338
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.eclipse.jetty\:jetty-http\:pom\:8.1.8.v20121106 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out
+@default-artifactory-snapshot-http\://maven.free4lab.com/artifactory/libs-snapshot-local/.lastUpdated=1457691094132
+https\://repo.maven.apache.org/maven2/.lastUpdated=1457691095906
+http\://maven.free4lab.com/artifactory/libs-snapshot-local/.error=Could not transfer artifact org.eclipse.jetty\:jetty-http\:pom\:8.1.8.v20121106 from/to artifactory-snapshot (http\://maven.free4lab.com/artifactory/libs-snapshot-local)\: connect timed out
+http\://maven-us.nuxeo.org/nexus/content/repositories/vendor-snapshots/.error=
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1457691084125
+http\://anonsvn.icesoft.org/repo/maven2/releases/.error=

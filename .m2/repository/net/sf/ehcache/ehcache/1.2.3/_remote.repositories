@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jun 23 09:47:09 CST 2015
+ehcache-1.2.3.jar>artifactory=
+ehcache-1.2.3.pom>artifactory=
+ehcache-1.2.3.jar>central=
+ehcache-1.2.3.jar>snapshots=
+ehcache-1.2.3.pom>central=
+ehcache-1.2.3.pom>snapshots=

@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jan 11 11:17:25 CST 2016
+http\://repo.maven.apache.org/maven2/.lastUpdated=1452002927846
+@default-http\://59.64.179.54\:8081/artifactory/repo/.lastUpdated=1452002927003
+http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1452482245951
+http\://repo.maven.apache.org/maven2/.error=
+http\://59.64.179.54\:8081/artifactory/repo/.error=Could not transfer artifact mongo\:mongo\:pom\:2.7.2 from/to artifactory (http\://59.64.179.54\:8081/artifactory/repo)\: connect timed out

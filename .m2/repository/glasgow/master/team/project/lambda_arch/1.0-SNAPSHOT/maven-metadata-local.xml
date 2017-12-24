@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>glasgow.master.team.project</groupId>
+  <artifactId>lambda_arch</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20151228031920</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0-SNAPSHOT</value>
+        <updated>20151228031920</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

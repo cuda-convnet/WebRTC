@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Mar 04 16:19:06 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1457079546808
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1457079544936
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact com.belerweb\:pinyin4j\:jar\:2.5.0 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out

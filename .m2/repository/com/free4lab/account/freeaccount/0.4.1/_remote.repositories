@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Dec 28 00:30:52 CST 2016
+freeaccount-0.4.1.pom>=
+freeaccount-0.4.1.war>=
+freeaccount-0.4.1-sources.jar>=

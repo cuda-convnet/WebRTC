@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Jan 10 17:19:03 CST 2016
+commons-httpclient-3.1-sources.jar>artifactory=
+commons-httpclient-3.1.pom>snapshots=
+commons-httpclient-3.1.jar>artifactory=
+commons-httpclient-3.1.jar>snapshots=
+commons-httpclient-3.1.jar>central=
+commons-httpclient-3.1.pom>central=
+commons-httpclient-3.1.pom>artifactory=

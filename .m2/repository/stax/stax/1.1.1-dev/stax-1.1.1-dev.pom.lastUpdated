@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Mar 11 18:37:49 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1457692669961
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1457692669493
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact stax\:stax\:pom\:1.1.1-dev from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Mar 06 14:39:22 CST 2016
+bayeux-api-2.5.0.jar>artifactory=
+bayeux-api-2.5.0-sources.jar>artifactory=
+bayeux-api-2.5.0.jar>central=
+bayeux-api-2.5.0.pom>artifactory=
+bayeux-api-2.5.0.pom>central=

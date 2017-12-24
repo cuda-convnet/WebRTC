@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jan 26 17:47:03 CST 2016
+hadoop-hdfs-2.6.0.jar>central=
+hadoop-hdfs-2.6.0-tests.jar>central=
+hadoop-hdfs-2.6.0.pom>central=

@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Dec 02 15:51:52 CST 2015
+http\://repo.maven.apache.org/maven2/.lastUpdated=1449042712212
+http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1449042697061
+http\://repo.maven.apache.org/maven2/.error=
+@default-http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.lastUpdated=1449042708149
+http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.error=Could not transfer artifact com.free4lab.utils\:free4lab-common-utils\:pom\:0.5.32 from/to eclipselink (http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/)\: connect timed out
+http\://maven.free4lab.com/artifactory/repo/.error=

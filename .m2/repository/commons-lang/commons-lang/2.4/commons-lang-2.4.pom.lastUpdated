@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Aug 10 23:20:37 CST 2015
+http\://repo.maven.apache.org/maven2/.lastUpdated=1439220037987
+@default-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1439220036975
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact commons-lang\:commons-lang\:pom\:2.4 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

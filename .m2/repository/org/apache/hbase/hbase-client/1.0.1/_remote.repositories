@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Dec 25 16:58:04 CST 2015
+hbase-client-1.0.1.jar>snapshots=
+hbase-client-1.0.1.jar>central=
+hbase-client-1.0.1.pom>snapshots=
+hbase-client-1.0.1.pom>central=
+hbase-client-1.0.1-sources.jar>maven=

@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 11:18:32 CST 2016
+@default-central-http\://maven.free4lab.com/artifactory/plugins-release/.lastUpdated=1456974249821
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456975112191
+http\://maven.free4lab.com/artifactory/plugins-snapshot/.error=Could not transfer artifact org.sonatype.spice\:spice-parent\:pom\:17 from/to snapshots (http\://maven.free4lab.com/artifactory/plugins-snapshot)\: connect timed out
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1456975111774
+@default-snapshots-http\://maven.free4lab.com/artifactory/plugins-snapshot/.lastUpdated=1456974259828
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.sonatype.spice\:spice-parent\:pom\:17 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out
+http\://maven.free4lab.com/artifactory/plugins-release/.error=Could not transfer artifact org.sonatype.spice\:spice-parent\:pom\:17 from/to central (http\://maven.free4lab.com/artifactory/plugins-release)\: connect timed out

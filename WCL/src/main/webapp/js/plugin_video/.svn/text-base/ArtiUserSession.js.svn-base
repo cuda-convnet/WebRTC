@@ -1,0 +1,42 @@
+/**
+ *处理接收来自人工总机模块的会话信息
+ *  
+ */
+
+(function(){
+    com.webrtc.ArtiUserSession = Object.subClass({
+        /** @Public Methods*/
+        ctor : function() {
+
+            this.calleeName=null;
+
+            this.OnResponse=null;
+
+        },
+
+        init : function(onresponse){
+    
+            this.OnResponse = onresponse;
+        }, 
+        
+        handleMessage : function(message){
+
+			//处理反馈的结果
+			var msg = JSON.parse(message.data);//转换成json格式
+
+        },
+
+		//发送消息至WCS
+        SendMessage : function(message){
+            this.appConnected.trigger(com.webrtc.events.RecvUserSession,message);
+        },
+        HangUp:function(CalleeId)
+        {
+            com.webrtc.DeleteUserSession(this.SessionID);
+        },
+
+        setSessionID:function(sessionID){
+            this.SessionID=sessionID;
+        }
+    });
+})();

@@ -1,0 +1,86 @@
+package com.free4lab.newtest.api.action.encontacts;
+
+import java.util.List;
+
+import org.apache.log4j.Logger;
+
+import com.free4lab.account.manager.EncontactManager;
+import com.free4lab.account.model.Encontact;
+import com.free4lab.newtest.action.base.BaseAction;
+
+public class FindEncontactAction extends BaseAction {
+
+	/**
+	 * 显示专业信息
+	 */
+	private static final long serialVersionUID = 1L;
+	private static final Logger logger = Logger.getLogger(FindEncontactAction.class);
+	
+	private List<Encontact> encontacts;
+	private Encontact encontact;
+	private int encontactId;
+	private Integer fz;
+	
+	private String result="error";
+	
+	//获取指定Fz的所有encontact项
+		public String execute() throws Exception{
+			logger.info(fz);
+			encontacts = EncontactManager.findEncontactByFz(fz);
+			if(encontacts!=null && encontacts.size()>0){
+				result = "success";
+			}
+			return SUCCESS;
+		}
+
+		//获取指定encontactId的单一项
+		public String findSingleEncontact() throws Exception{
+			logger.info(encontactId);
+			encontact = EncontactManager.findEngroupById(encontactId);
+			if(encontact!=null){
+				result = "success";
+			}
+			return SUCCESS;
+		}
+
+		
+	public List<Encontact> getEncontacts() {
+		return encontacts;
+	}
+
+	public void setEncontacts(List<Encontact> encontacts) {
+		this.encontacts = encontacts;
+	}
+
+	public Integer getFz() {
+		return fz;
+	}
+
+	public void setFz(Integer fz) {
+		this.fz = fz;
+	}
+
+	public Encontact getEncontact() {
+		return encontact;
+	}
+
+	public void setEncontact(Encontact encontact) {
+		this.encontact = encontact;
+	}
+
+	public int getEncontactId() {
+		return encontactId;
+	}
+
+	public void setEncontactId(int encontactId) {
+		this.encontactId = encontactId;
+	}
+
+	public String getResult() {
+		return result;
+	}
+
+	public void setResult(String result) {
+		this.result = result;
+	}
+}

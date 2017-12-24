@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!--
+  - This file is included by the struts.xml file as an example
+  - of how to break up the configuration file into multiple files.
+-->
+<struts>
+  <package name="switchboard" namespace="/" extends="default">
+  
+  		<action name="enterswitchboard" class="com.free4lab.webrtc.action.account.EnterSwitchBoardAction">
+			<result name="success">/basic/index.jsp</result>
+		</action>
+  
+  		<action name="enterauto">
+			<result name="success">/basic/auto.jsp</result>
+		</action>
+		
+		<action name="enterarti">
+			<result name="success">/basic/arti.jsp</result>
+		</action>
+		
+		<action name="enterchat">
+			<result name="success">/basic/chat.jsp</result>
+		</action>
+  </package>
+</struts>

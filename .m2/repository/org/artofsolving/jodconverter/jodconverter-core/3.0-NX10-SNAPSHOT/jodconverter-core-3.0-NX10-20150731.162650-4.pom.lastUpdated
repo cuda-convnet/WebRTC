@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Mar 11 16:28:50 CST 2016
+@default-artifactory-snapshot-http\://maven.free4lab.com/artifactory/libs-snapshot-local/.lastUpdated=1457684925448
+http\://anonsvn.icesoft.org/repo/maven2/releases/.error=
+http\://anonsvn.icesoft.org/repo/maven2/releases/.lastUpdated=1457684929117
+http\://maven.free4lab.com/artifactory/libs-snapshot-local/.error=Could not transfer artifact org.artofsolving.jodconverter\:jodconverter-core\:pom\:3.0-NX10-20150731.162650-4 from/to artifactory-snapshot (http\://maven.free4lab.com/artifactory/libs-snapshot-local)\: connect timed out
+http\://maven-us.nuxeo.org/nexus/content/repositories/vendor-snapshots/.lastUpdated=1457684930616

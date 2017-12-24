@@ -1,0 +1,44 @@
+10
+
+dir
+173
+svn://10.109.247.137/CT/ACL/trunk/src/main/java/com/free4lab/webrtc
+svn://10.109.247.137
+
+
+
+2016-04-23T09:34:44.682870Z
+173
+yck
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dd5b6bcd-1c66-491e-9c35-e43e2b91e06b
+
+
+
+
+
+
+0
+
+action
+dir
+
+common
+dir
+
+manager
+dir
+

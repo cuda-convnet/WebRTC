@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Apr 18 16:49:09 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1460969349046
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1460969347275
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact mysql\:mysql-connector-java\:jar\:sources\:5.1.6 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out
+https\://repo.maven.apache.org/maven2/.error=

@@ -1,0 +1,13 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Mar 11 16:40:08 CST 2016
+https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1457685608816
+http\://anonsvn.icesoft.org/repo/maven2/releases/.lastUpdated=1457685603374
+http\://maven-us.nuxeo.org/nexus/content/repositories/vendor-snapshots/.lastUpdated=1457685604066
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact com.sun.media\:jai-codec\:pom\:1.1.3 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out
+@default-artifactory-snapshot-http\://maven.free4lab.com/artifactory/libs-snapshot-local/.lastUpdated=1457685602710
+https\://repo.maven.apache.org/maven2/.lastUpdated=1457685605418
+https\://repo.maven.apache.org/maven2/.error=
+http\://maven.free4lab.com/artifactory/libs-snapshot-local/.error=Could not transfer artifact com.sun.media\:jai-codec\:pom\:1.1.3 from/to artifactory-snapshot (http\://maven.free4lab.com/artifactory/libs-snapshot-local)\: connect timed out
+http\://maven-us.nuxeo.org/nexus/content/repositories/vendor-snapshots/.error=
+http\://anonsvn.icesoft.org/repo/maven2/releases/.error=
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1457685592703

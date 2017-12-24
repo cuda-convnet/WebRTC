@@ -1,0 +1,30 @@
+package com.webrtc.domain;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+public class AutoQuestionMessage {
+
+	private JSONObject msgObj= null;
+	
+	public AutoQuestionMessage(String from, int status, String question,int eid) {
+		
+		try {
+			this.msgObj = new JSONObject();
+			this.msgObj.put("from", from);
+			this.msgObj.put("status", status); //强行置为终结
+			this.msgObj.put("question", question);
+			this.msgObj.put("eid", eid);
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public JSONObject getMsgObj() {
+		return msgObj;
+	}
+
+	public void setMsgObj(JSONObject msgObj) {
+		this.msgObj = msgObj;
+	}
+}

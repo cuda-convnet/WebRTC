@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Feb 01 22:15:22 CST 2016
+http\://repo.maven.apache.org/maven2/.lastUpdated=1454336122335
+@default-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1454336118806
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.apache.hbase\:hbase\:jar\:sources\:0.94.1 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out

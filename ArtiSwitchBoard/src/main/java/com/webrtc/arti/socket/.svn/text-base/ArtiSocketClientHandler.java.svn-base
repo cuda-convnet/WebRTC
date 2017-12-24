@@ -1,0 +1,36 @@
+package com.webrtc.arti.socket;
+
+import java.net.*;
+
+import org.json.JSONObject;
+
+import com.webrtc.arti.core.ArtiSwitchBoardManager;
+
+
+//ArtiSocketHandler 连接的是 人工总机分配资源的模块
+public class ArtiSocketClientHandler extends SocketHandler 
+{
+	public ArtiSocketClientHandler(String id, Socket s) 
+	{	
+		super(id,s);
+	}
+	/**
+	 * handle the message received
+	 * 
+	 * @param message
+	 *            : the message need to handle
+	 * @throws
+	 * @return
+	 */
+	@Override
+	public void handleMessage(String message) {
+
+		System.out.println("From "+this.remoteID+" Socket message : " + message);
+		
+		//接收WCS传来的数据
+		JSONObject msgObj = new JSONObject(message);
+
+		//处理
+		ArtiSwitchBoardManager.handle(msgObj);
+	}
+}

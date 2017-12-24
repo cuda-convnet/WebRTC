@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Dec 25 16:27:20 CST 2015
+junit-4.10.jar>central=
+junit-4.10.jar>artifactory=
+junit-4.10.pom>central=
+junit-4.10.pom>artifactory=

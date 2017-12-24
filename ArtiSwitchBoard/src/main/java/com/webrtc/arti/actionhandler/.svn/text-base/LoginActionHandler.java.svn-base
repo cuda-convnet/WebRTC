@@ -1,0 +1,47 @@
+package com.webrtc.arti.actionhandler;
+
+
+
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+import com.webrtc.arti.common.ActionType;
+import com.webrtc.arti.domain.Client;
+import com.webrtc.arti.domain.Server;
+
+/**
+ * 当人工总机用户点击“注册”时 进行处理
+ */
+public class LoginActionHandler extends ActionHandler{
+
+	
+	@Override
+	public void dispatch(Client client, Queue<Client> requestClientQueue,Map<String, Server> allServerMap, PriorityQueue<Server> idleServerQueue,Map<String, Server> busyServerMap) {
+
+		Server server = ((Server)client);
+		String servername = server.getUsername();
+
+		if(!allServerMap.containsKey(servername)) //新的
+		{
+			//生成新客服
+			Server newServer = new Server(servername, server.getEid(),server.getPriority() , server.getTargetname(), server.getMaxServingNum());
+			System.out.println("企业用户："+newServer.getUsername()+"注册为人工总机");
+			
+			//添加客服
+			allServerMap.put(servername, newServer); //加入到总客服表
+			idleServerQueue.offer(newServer); //根据优先级加入到优先空闲队列
+			printAll(requestClientQueue, idleServerQueue, busyServerMap, allServerMap);
+
+			//分配给下一个用户
+			super.giveOffer(requestClientQueue,allServerMap, idleServerQueue, busyServerMap);
+		}
+	}
+
+	@Override
+	public int getType() {
+
+		return ActionType.LOGIN;
+	}
+
+}

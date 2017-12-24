@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"       
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+       <package name="groupship" namespace="/groupship" extends="default">
+    	
+		<action name="groups" class="com.free4lab.newtest.action.groups.FindGroupAction">
+			<result name="success">/group/findgroup.jsp</result>
+		</action>
+		<action name="addgroup" class="com.free4lab.newtest.action.groups.AddGroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="modgroup" class="com.free4lab.newtest.action.groups.ModGroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="delgroup" class="com.free4lab.newtest.action.groups.DelGroupAction">
+			<result type="json"></result>
+		</action>
+    </package> 
+      
+      <package name="api/groupship" namespace="/api/groupship" extends="default">
+    	
+		<action name="groups" class="com.free4lab.newtest.api.action.groups.FindGroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="findsinglegroup" class="com.free4lab.newtest.api.action.groups.FindGroupAction" method="findSingleGroup">
+			<result type="json"></result>
+		</action>
+		<action name="addgroup" class="com.free4lab.newtest.api.action.groups.AddGroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="modgroup" class="com.free4lab.newtest.api.action.groups.ModGroupAction">
+			<result type="json"></result>
+		</action>
+		<action name="delgroup" class="com.free4lab.newtest.api.action.groups.DelGroupAction">
+			<result type="json"></result>
+		</action>
+    </package>       
+</struts>

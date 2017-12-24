@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.appcloud.enabler.mail</groupId>
+  <artifactId>mail</artifactId>
+  <packaging>pom</packaging>
+  <version>0.0.1</version>
+  <modules>
+  	<module>persistence</module>
+  	<module>server</module>
+  	<module>common</module>
+  	<module>sdk</module>
+  </modules> 
+ <repositories>
+		<repository>
+			<id>artifactory</id>
+			<name>qingya artifactory</name>
+			<url>http://maven.free4lab.com/artifactory/repo</url>
+		</repository>
+	</repositories>
+ 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>artifactory</id>
+			<name>qingya artifactory</name>
+			<url>http://maven.free4lab.com/artifactory/plugins-releases</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+</project>

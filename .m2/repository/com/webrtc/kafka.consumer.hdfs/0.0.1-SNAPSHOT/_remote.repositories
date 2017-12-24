@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Feb 02 19:12:56 CST 2016
+kafka.consumer.hdfs-0.0.1-SNAPSHOT-jar-with-dependencies.jar>=
+kafka.consumer.hdfs-0.0.1-SNAPSHOT.jar>=
+kafka.consumer.hdfs-0.0.1-SNAPSHOT.pom>=

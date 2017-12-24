@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Aug 10 23:20:48 CST 2015
+http\://repo.maven.apache.org/maven2/.lastUpdated=1439220048725
+@default-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1439220048016
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.apache.maven.shared\:maven-filtering\:pom\:1.0-beta-3 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

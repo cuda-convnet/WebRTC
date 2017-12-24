@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 11:01:52 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456974112448
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1456974111940
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.mortbay.jetty\:project\:pom\:6.1.21 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

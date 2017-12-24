@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 10:43:35 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456973015574
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1456973015167
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact org.springframework\:spring-beans\:pom\:2.5.6 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out

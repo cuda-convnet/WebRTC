@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.free4lab.messagewebrtc</groupId>
+  <artifactId>messagewebrtc</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20160323071243</lastUpdated>
+  </versioning>
+</metadata>

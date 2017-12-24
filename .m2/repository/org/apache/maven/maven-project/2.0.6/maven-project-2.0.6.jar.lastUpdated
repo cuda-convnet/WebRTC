@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 11:17:59 CST 2016
+@default-central-http\://maven.free4lab.com/artifactory/plugins-release/.lastUpdated=1456973822457
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456975079615
+http\://maven.free4lab.com/artifactory/plugins-snapshot/.error=Could not transfer artifact org.apache.maven\:maven-project\:jar\:2.0.6 from/to snapshots (http\://maven.free4lab.com/artifactory/plugins-snapshot)\: connect timed out
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1456975070617
+@default-snapshots-http\://maven.free4lab.com/artifactory/plugins-snapshot/.lastUpdated=1456973972594
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.apache.maven\:maven-project\:jar\:2.0.6 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out
+http\://maven.free4lab.com/artifactory/plugins-release/.error=Could not transfer artifact org.apache.maven\:maven-project\:jar\:2.0.6 from/to central (http\://maven.free4lab.com/artifactory/plugins-release)\: connect timed out

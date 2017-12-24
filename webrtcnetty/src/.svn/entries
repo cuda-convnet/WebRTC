@@ -1,0 +1,37 @@
+10
+
+dir
+175
+svn://10.109.247.137/CT/netty/trunk/src
+svn://10.109.247.137
+
+
+
+2016-03-06T02:31:43.450276Z
+99
+pq
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dd5b6bcd-1c66-491e-9c35-e43e2b91e06b
+
+main
+dir
+
+resource
+dir
+
+test
+dir
+

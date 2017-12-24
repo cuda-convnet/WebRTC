@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Aug 11 13:01:27 CST 2015
+persistence-api-1.0.jar>artifactory=
+persistence-api-1.0.jar>snapshots=
+persistence-api-1.0.pom>artifactory=
+persistence-api-1.0.pom>snapshots=
+persistence-api-1.0.jar>central=
+persistence-api-1.0-sources.jar>artifactory=
+persistence-api-1.0.pom>central=

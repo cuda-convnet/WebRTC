@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Dec 13 19:33:41 CST 2015
+common-0.0.1.pom>central=
+common-0.0.1.pom>artifactory=
+common-0.0.1.jar>artifactory=

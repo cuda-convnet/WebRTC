@@ -1,0 +1,147 @@
+package com.webrtc.domain;
+
+
+import java.util.HashMap;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.webrtc.common.ArtiActionType;
+import com.webrtc.common.Constants;
+import com.webrtc.service.SocketService;
+
+/**
+ * 存储外部用户与人工总机会话的必要信息
+ * by yck
+ *
+ */
+public class ArtiSession {
+
+	private static HashMap<String, ArtiSession> artiSessions = new HashMap<String,ArtiSession>();
+	private static final int ARTIUSER_TIMEOUT_DELAY = Integer.valueOf(Constants.USER_TIMEOUT_DELAY); //会话回复的最长等待时间
+	
+	private int eid = 0;
+	private String from =""; //用户名
+	private String sessionID = ""; //会话的唯一标识
+	private int userType = ArtiActionType.CLIENT; //是否是客服
+	private String servername = ""; //客服名称
+
+	public ArtiSession(int eid, String from, String sessionID,int userType,String servername) {
+
+		this.eid = eid;
+		this.from = from;
+		this.sessionID = sessionID;
+		this.userType = userType;
+		this.servername = servername;
+	}
+	
+	/**
+	 * 更新
+	 * 1.若是第一次，创建会话对象
+	 * 2.非第一次&&人工总机注销，删除会话对象
+	 * 3.非第一次&&非人工总机注销，跳过
+	 * @throws JSONException 
+	 */
+	public static void update(JSONObject msgObj) throws JSONException
+	{
+		int eid = msgObj.getInt("eid");
+		String from = msgObj.getString("from");
+		String sessionID = msgObj.getString("sessionID");
+	
+		if(!artiSessions.containsKey(from)) //第一次访问，创建会话
+		{	
+			System.out.println("创建与人工总机"+ from +"新会话");
+			
+			int userType = msgObj.getInt("action"); //需要记录是外部用户or客服
+			ArtiSession session = new ArtiSession(eid, from, sessionID, userType,"");
+			artiSessions.put(from, session);
+		}
+		else //非第一次访问
+		{
+			int action = msgObj.getInt("action");
+			if(action == ArtiActionType.LOGOUT) //人工总机注销
+			{
+				artiSessions.remove(from);
+			}
+		}
+	}
+	
+	/**
+	 * 删除
+	 * 删除clientName与人工总机模块的会话信息！！！！！！！！！
+	 */
+	public static void remove(String clientName)
+	{
+		if(artiSessions.containsKey(clientName))
+		{
+			ArtiSession artiSession = artiSessions.get(clientName);
+			int eid = artiSession.getEid();
+			String servername = artiSession.getServername();
+			int userType = artiSession.getUserType();
+			
+			int action = ArtiActionType.CLIENT;
+			if(userType == ArtiActionType.CLIENT) //外部用户退出
+			{
+				action = ArtiActionType.END;
+				System.out.println("已通知人工总机模块处理:外部用户退出");
+			}
+			else //客服退出
+			{
+				action = ArtiActionType.LOGOUT;
+				System.out.println("已通知人工总机模块处理:客服退出");
+			}
+			
+			ArtiActionMessage artiMsg = new ArtiActionMessage(eid, clientName, 0, servername, 3, action);
+			SocketService.getSocketHandlerFromServerID(Constants.ARTI_FLAG).send(artiMsg.getMsgObj().toString());
+			
+			//从人工总机会话表中删除
+			artiSessions.remove(clientName);
+			System.out.println("已删除"+ clientName +"与人工总机的会话信息");
+		}
+	}
+	
+	
+	public static HashMap<String, ArtiSession> getArtiSessions() {
+		return artiSessions;
+	}
+
+	public int getEid() {
+		return eid;
+	}
+
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+
+	public String getFrom() {
+		return from;
+	}
+
+	public void setFrom(String from) {
+		this.from = from;
+	}
+
+	public String getSessionID() {
+		return sessionID;
+	}
+	public void setSessionID(String sessionID) {
+		this.sessionID = sessionID;
+	}
+
+	public int getUserType() {
+		return userType;
+	}
+
+	public void setUserType(int userType) {
+		this.userType = userType;
+	}
+
+	public String getServername() {
+		return servername;
+	}
+
+	public void setServername(String servername) {
+		this.servername = servername;
+	}
+
+}

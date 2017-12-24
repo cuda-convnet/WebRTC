@@ -1,0 +1,61 @@
+10
+
+dir
+139
+svn://10.109.247.137/CT/common-utils/trunk/src/main/java/com/free4lab/utils
+svn://10.109.247.137
+
+
+
+2016-04-12T06:22:29.908295Z
+128
+rxt
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dd5b6bcd-1c66-491e-9c35-e43e2b91e06b
+
+account
+dir
+
+action
+dir
+
+enabler
+dir
+
+group
+dir
+
+hash
+dir
+
+http
+dir
+
+io
+dir
+
+log
+dir
+
+perflog
+dir
+
+recommend
+dir
+
+sql
+dir
+

@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 11:19:03 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456975143992
+@default-artifactory-http\://maven.free4lab.com/artifactory/plugins-releases/.lastUpdated=1456975143095
+http\://maven.free4lab.com/artifactory/plugins-releases/.error=Could not transfer artifact org.sonatype.forge\:forge-parent\:pom\:5 from/to artifactory (http\://maven.free4lab.com/artifactory/plugins-releases)\: connect timed out

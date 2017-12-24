@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Aug 17 09:57:28 CST 2015
+http\://repo.maven.apache.org/maven2/.lastUpdated=1439776648140
+http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1439776636794
+http\://repo.maven.apache.org/maven2/.error=
+@default-http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.lastUpdated=1439776647569
+http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/.error=Could not transfer artifact com.appcloud.enabler.mail\:sdk\:jar\:sources\:0.0.2 from/to eclipselink (http\://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/)\: connect timed out
+http\://maven.free4lab.com/artifactory/repo/.error=

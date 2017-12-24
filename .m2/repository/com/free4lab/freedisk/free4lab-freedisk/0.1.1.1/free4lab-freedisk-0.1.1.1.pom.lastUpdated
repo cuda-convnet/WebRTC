@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 10:42:46 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1456972966317
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1456972965447
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact com.free4lab.freedisk\:free4lab-freedisk\:pom\:0.1.1.1 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out
+https\://repo.maven.apache.org/maven2/.error=

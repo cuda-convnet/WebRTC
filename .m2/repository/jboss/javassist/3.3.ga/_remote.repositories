@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jun 23 09:47:09 CST 2015
+javassist-3.3.ga.jar>artifactory=
+javassist-3.3.ga.jar>snapshots=
+javassist-3.3.ga.pom>artifactory=
+javassist-3.3.ga.pom>snapshots=
+javassist-3.3.ga.jar>central=
+javassist-3.3.ga.pom>central=

@@ -1,0 +1,10 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 03 20:21:56 CST 2016
+http\://maven.free4lab.com/artifactory/libs-snapshot/.lastUpdated=1453107133471
+http\://maven.free4lab.com/artifactory/libs-snapshot/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1457007716147
+@default-artifactory-http\://maven.free4lab.com/artifactory/repo/.lastUpdated=1457007714982
+http\://maven.free4lab.com/artifactory/libs-release/.error=
+http\://maven.free4lab.com/artifactory/repo/.error=Could not transfer artifact open189.sign\:open189-sign\:pom\:1.0 from/to artifactory (http\://maven.free4lab.com/artifactory/repo)\: connect timed out
+http\://maven.free4lab.com/artifactory/libs-release/.lastUpdated=1453107212003
+https\://repo.maven.apache.org/maven2/.error=
